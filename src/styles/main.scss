@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.main-nav {
+    position: fixed;
+    background: #00C892;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul .second-nav a {
+        display: inline-block;
+        color: #fff;
+        margin: 0 20px;
+        padding: 5px 15px;
+        background: rgb(80, 80, 179);
+        border-radius: 5px;
+    }
+
+    ul .second-nav a:hover {
+        background: #C9FCE9;
+        color: #23233B;
+    }
+}
+
+.main-btn {
+    padding: 5px;
+    background: rgb(80, 80, 179);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.filter {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.countries-box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 100px;
+}
+
+
+.country-item {
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 5px 15px;
+    display: flex;
+}
+
+.country-flag {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.country-btn {
+    border-radius: 5px;
+    margin-left: auto;
+    padding: 5px  20px;
+    &:hover {
+        background: rgb(80, 80, 179);
+        color: #fff;
+    }
+}
+
+
+.modal {
+    height: 500px;
+    width: 500PX;
+    background: #2B4360;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+    .close-btn {
+        padding: 5px 15px;
+        border: none;
+        border-radius: 7px;
+        background: #623C5F;
+        color: #fff;
+    }
+}
+
+.modal-content {
+    background:#83D6BB;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 8px;
+}
